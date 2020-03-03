@@ -16,7 +16,7 @@
 <body>
 
 <nav class="navbar navbar-expand-sm navbar-dark navbar-fixed-top bg-dark p-2">
-    <div class="container">
+    <div class="container-fluid ml-4">
         <a href="/" class="navbar-brand">Coronavirus Tracker App</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>

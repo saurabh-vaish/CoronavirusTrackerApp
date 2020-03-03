@@ -51,11 +51,13 @@
                         <tbody>
                         <#list corona.getConfirmed().getLocations() as data>
                         <tr>
-                            <td>${data?index}</td>
+                            <td>${data?index+1}</td>
                             <td>${data.getCountry()}</td>
                             <td>${data.getProvince()}</td>
                             <td>${data.getLatest()}</td>
-                            <td>${data.getCoordinates().getLatitude()}, ${data.getCoordinates().getLongitude()}</td>
+                            <td>
+                                 <a href="http://www.google.com/maps/place/${data.getCoordinates().getLatitude()}, ${data.getCoordinates().getLongitude()}" target="_blank" >${data.getCoordinates().getLatitude()}, ${data.getCoordinates().getLongitude()}</a>
+                            </td>
                             <td>
                                 <#if data.getProvince()!="">
                                     <a href="/history/state/${data.getProvince()}" class="btn btn-secondary">
