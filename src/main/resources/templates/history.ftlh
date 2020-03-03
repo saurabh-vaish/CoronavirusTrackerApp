@@ -19,7 +19,7 @@
                                     <th class="col-6">State</th><td class="col-6">${corona.getProvince()}</td>
                                 </tr>
                                 <tr class="row">
-                                    <th class="col-6">Latest</th><td class="col-6">${corona.getLatest()}</td>
+                                    <th class="col-6">Total Infected</th><td class="col-6">${corona.getLatest()}</td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import reactor.core.publisher.Mono;
 
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -73,6 +74,7 @@ public class CoronaController {
                 locations.setCountry(loca.getCountry());
                 locations.setHistory(loca.getHistory());
                 locations.setProvince(loca.getProvince());
+                locations.setLatest(loca.getLatest());
        }).map(l->l.get(0));
 
         map.addAttribute("corona", locations);
@@ -95,6 +97,7 @@ public class CoronaController {
             locations.setCountry(loca.getCountry());
             locations.setHistory(loca.getHistory());
             locations.setProvince(loca.getProvince());
+            locations.setLatest(loca.getLatest());
         }).map(l->l.get(0));
 
         map.addAttribute("corona", locations);

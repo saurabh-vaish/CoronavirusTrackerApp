@@ -234,7 +234,7 @@ body, html {
 </svg>
 <div class="content">
 
-	<h4><p><a href="/" class="btn btn-info btnbox">Goto Home <i class="fa fa-home"></i></a>	</p></h4>
+	<h2><a href="/" class="btn btn-success btnbox" style="color:green !important">Go Home <i class="fa fa-home"></i></a></h2>
 </div>
 		
 		</div>
